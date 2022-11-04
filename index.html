@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch</title>
+    <link rel="shortcut icon" href="icon.png" type="Stopwatch">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+</head>
+<body>
+     <div id="stopwatch">
+        <div id="base-bottom">
+            <div class="flex">
+                <button id="start-btn">Start</button><br>
+                <button id="stop-btn">Stop</button>
+            </div>
+            <div>
+                <input type="time" id="timer"><br>
+                <button id="set-btn">Set Timer</button>
+            </div>
+            <div >
+                <button id="reset-btn">Reset</button><br>
+                <button id="flag-btn">Flag</button>
+            </div>
+                        
+        </div>
+        <div id="base"></div>
+       <div id="hour"></div>
+       <div id="minute"></div>
+       <div id="second"></div>
+       <div id="display">00:00:00:00</div>
+      
+     </div>
+     <div id="flag-area"><h2>History :</h2></div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

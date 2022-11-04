@@ -1,0 +1,375 @@
+#stopwatch{  
+    position: relative;
+    margin: auto;
+    height: 60vw;
+    width: 40vw; 
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+#hour{
+    width: 1.8%;
+    height: 15%;
+    top: 19%;
+    left: 48.85%;
+    opacity: 0.8; 
+    /* display: none; */
+}
+#minute{
+    width: 1.6%;
+    height: 20%;
+    top: 14%;
+    left: 48.9%;
+    opacity: 0.8; 
+   /* display: none; */
+}
+#second{
+    width: 1%;
+    height: 30%;
+    top: 4%;
+    left: 49.25%;
+    opacity: 0.8; 
+   /* display: none; */
+}
+#display{
+    position: absolute;
+    background: #f5ecec;
+    border-radius: 10px;
+      width: 45%;
+    height: 15%;
+    top: 40%;
+    left: 27.85%;
+    opacity: 0.8;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#base{
+    position: absolute;
+    background: #080808;
+    border-radius: 11px;
+    width: 100%;
+    height: 65%;
+    top: 35%;
+    opacity: .5;
+    /* left: 2.85%; */
+    transform: rotateX(95deg);
+}
+#base-bottom{
+    position: absolute;
+    background: #080808;
+    border-radius: 11px;
+    width: 100%;
+    height: 65%;
+    top: 58%;
+    transform: rotateX(315deg); 
+    display: flex;
+    justify-content: space-between;
+    opacity: .5;
+}
+#base-bottom div{
+    line-height: 2rem;
+    padding: 2rem 1rem;
+}
+button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #000000;
+    /* opacity: .5; */
+    color: #ffffff;
+    border: 2px solid white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #000000;
+}
+input{
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem;
+    background: #000000;
+    /* opacity: .5; */
+    color: #ffffff;
+}
+#flag-area{
+    position: relative;
+    height: 20vw;
+    width: 40vw;
+    margin: auto; 
+    background-color: rgb(6, 36, 36);
+    padding: .2rem .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 11px;
+    box-shadow: 25px 15px 5px rgb(9, 46, 46);
+    color: #ffffff;
+}
+h2{
+    margin: 0;
+}
+.box{
+    margin: 0;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+#start-btn{
+    background-color: green;
+}
+#stop-btn{
+    background-color: rgb(255 0 0);
+}
+#reset-btn{
+    background-color: rgb(0 0 255);
+}
+#flag-btn{
+    background-color: #9f189f;
+}
+#set-btn{
+    background-color:darkblue ;
+}
+@media screen and (max-width: 1080px) {
+    #display{
+        font-size: 1.2rem;
+        
+    }
+    button{
+        width: 4rem;
+        height: 4rem;
+        margin: 1.2rem 0;
+        font-size: 1rem;
+       
+      
+    }
+    input{
+        width: 5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: .3rem;
+       
+    }
+    #base-bottom div{
+        line-height: 2rem;
+        padding: 1.8rem 1rem;
+    }
+    #flag-area{
+        
+        padding: .2rem .5rem;
+        font-size: .8rem;
+        
+    }
+    .box{
+        
+        padding: .8rem .8rem;
+        font-size: 1rem;
+        
+    }
+  }
+  @media screen and (max-width:800px) {
+    #display{
+        font-size: 1rem;
+        
+    }
+    button{
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem 0;
+        font-size: .8rem;
+       
+      
+    }
+    input{
+        width: 4rem;
+        height: 2.2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: .2rem;
+       
+    }
+    #base-bottom div{
+        line-height: 1.8rem;
+        padding: 1.5rem .8rem;
+    }
+    #flag-area{
+        
+        padding: .2rem .4rem;
+        font-size: .5rem;
+        
+    }
+    .box{
+        
+        padding: .6rem .6rem;
+        font-size: .8rem;
+        
+    }
+  }
+  @media screen and (max-width:640px) {
+    #display{
+        font-size: .8rem;
+        
+    }
+    button{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: .5rem 0;
+        font-size: .5rem;
+       
+      
+    }
+    input{
+        width: 3rem;
+        height: 2rem;
+        font-size: .9rem;
+        font-weight: 600;
+        padding: .2rem;
+       
+    }
+    #base-bottom div{
+        line-height: 1.2rem;
+        padding: 1.3rem .5rem;
+    }
+    #flag-area{
+        
+        padding: .2rem .2rem;
+        font-size: .3rem;
+        
+    }
+    .box{
+        
+        padding: .4rem .4rem;
+        font-size: .5rem;
+        
+    }
+  }
+  @media screen and (max-width:500px) {
+    #display{
+        font-size: .5rem;
+        
+    }
+    button{
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: .3rem 0;
+        font-size: .4rem;
+       
+      
+    }
+    input{
+        width: 2rem;
+        height: 2rem;
+        font-size: .5rem;
+        font-weight: 600;
+        padding: .2rem;
+       
+    }
+    #base-bottom div{
+        line-height: 1rem;
+        padding: 1rem .5rem;
+    }
+    #flag-area{
+        
+        padding: .2rem .2rem;
+        font-size: .2rem;
+        
+    }
+    .box{
+        
+        padding: .2rem .2rem;
+        font-size: .3rem;
+        
+    }
+  }
+  @media screen and (max-width:380px) {
+    #display{
+        font-size: .3rem;
+        
+    }
+    button{
+        width: 2rem;
+        height: 2rem;
+        margin: .2rem 0;
+        font-size: .2rem;
+       
+      
+    }
+    input{
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: .3rem;
+        font-weight: 600;
+        padding: .1rem;
+       
+    }
+    #base-bottom div{
+        line-height: .8rem;
+        padding: .8rem .3rem;
+    }
+    #flag-area{
+        
+        padding: .1rem .1rem;
+        font-size: .2rem;
+        
+    }
+    .box{
+        
+        padding: .1rem .1rem;
+        font-size: .2rem;
+        
+    }
+  }
+  @media screen and (max-width:320px) {
+    #display{
+        font-size: .18rem;
+        
+    }
+    button{
+        width: 1rem;
+        height: 1rem;
+        margin: .1rem 0;
+        font-size: .15rem;
+       
+      
+    }
+    input{
+        width: 1.3rem;
+        height: 1.3rem;
+        font-size: .18rem;
+        font-weight: 600;
+        padding: .05rem;
+       
+    }
+    #base-bottom div{
+        line-height: .6rem;
+        padding: .5rem .2rem;
+    }
+    #flag-area{
+        
+        padding: .1rem .1rem;
+        font-size: .2rem;
+        
+    }
+    .box{
+        
+        padding: .1rem .1rem;
+        font-size: .2rem;
+        
+    }
+  }
